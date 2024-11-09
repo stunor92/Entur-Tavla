@@ -13,7 +13,7 @@ const config = {
       strict: true
     }),
     prerender: {
-      default: true
+      entries: ['*']
     },
     paths: {
       base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : ''
