@@ -6,15 +6,17 @@ const config = {
 
   kit: {
     adapter: adapter({
-      // default options are shown
       pages: 'build',
       assets: 'build',
-      fallback: null,
+      fallback: '200.html', // Fallback page for dynamic routes
       precompress: false,
       strict: true
     }),
+    prerender: {
+      default: true
+    },
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '/Entur-Tavla' : ''
+      base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : ''
     }
   }
 };
