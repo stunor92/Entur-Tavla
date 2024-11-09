@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Now from '../components/Now.svelte';
+  import Weather from '../components/Weather.svelte';
   import type { YrWeather } from '../types/YrWeather';
   import type { NominatimReverse } from '../types/Nominatim';
   import { locationName } from '../ts/stores';
@@ -71,7 +71,13 @@
   {#await getYr(String(LOCATION.lat), String(LOCATION.lng))}
   <div class="">laster inner...</div>
   {:then result}
-      <Now now={result.properties.timeseries[0]} />
+    <div class="flex gap-4 justify-between items-center">
+        <Weather weather={result.properties.timeseries[0]} />
+        <Weather weather={result.properties.timeseries[1]} />
+        <Weather weather={result.properties.timeseries[2]} />
+        <Weather weather={result.properties.timeseries[3]} />
+        <Weather weather={result.properties.timeseries[4]} />
+    </div>
   {/await}
 {/if}
 
