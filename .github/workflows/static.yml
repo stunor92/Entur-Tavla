@@ -27,6 +27,7 @@ jobs:
           node-version: 22
       - name: npm install
         uses: jaid/action-npm-install@v1.2.1
+        
       - name: Install dependencies
         run: pnpm install
 
