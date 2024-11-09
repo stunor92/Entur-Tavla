@@ -8,7 +8,7 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: '200.html', // Fallback page for dynamic routes
+			fallback: 'index.html',
       precompress: false,
       strict: true
     }),
