@@ -66,7 +66,7 @@
   }
 </script>
 
-<iframe src="https://tavla.entur.no/kaAd4zN9ULyQjD3n8T3a" title="Entur tavla" width="100%" height="1100" frameBorder="0"></iframe>
+<iframe src="https://tavla.entur.no/kaAd4zN9ULyQjD3n8T3a" title="Entur tavla" width="100%" height="1300" frameBorder="0"></iframe>
 {#if LOCATION}
   {#await getYr(String(LOCATION.lat), String(LOCATION.lng))}
   <div class="">laster inner...</div>
