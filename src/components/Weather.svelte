@@ -30,11 +30,11 @@
           </div>
         {/if}
       </div>
-      <div class="flex text-gray-500">
+      <div class="flex text-white-500">
         <img src="/umbrella.svg" class="w-7"/>
         {formatNumber(weather.data.next_1_hours.details.precipitation_amount, 'millimeter')}
       </div>
-      <div class="flex text-gray-500">
+      <div class="flex text-white-500">
         <img src="/wind.svg" class="w-7"/>
         {formatNumber(weather.data.instant.details.wind_speed, 'meter-per-second')}
       </div>
