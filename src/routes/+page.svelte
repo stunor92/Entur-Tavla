@@ -76,7 +76,6 @@
         <Weather weather={result.properties.timeseries[1]} />
         <Weather weather={result.properties.timeseries[2]} />
         <Weather weather={result.properties.timeseries[3]} />
-        <Weather weather={result.properties.timeseries[4]} />
     </div>
   {/await}
 {/if}
