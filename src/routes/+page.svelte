@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount, onDestroy } from 'svelte';
   import Weather from '../components/Weather.svelte';
   import type { YrWeather } from '../types/YrWeather';
   import type { NominatimReverse } from '../types/Nominatim';
@@ -7,6 +8,7 @@
 
 
   let LOCATION = { name: 'Bergen', lat: 60.39299, lng: 5.32415 };
+  let intervalId: number;
 
   function getLocation() {
   if (navigator.geolocation) {
@@ -64,6 +66,16 @@
 
     return result;
   }
+
+  onMount(() => {
+    intervalId = setInterval(() => {
+      location.reload();
+    }, 900000); // 15 minutes in milliseconds
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  });
 </script>
 
 <iframe src="https://tavla.entur.no/kaAd4zN9ULyQjD3n8T3a" title="Entur tavla" width="100%" height="1300" frameBorder="0"></iframe>
