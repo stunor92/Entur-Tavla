@@ -104,7 +104,7 @@
 </div>
 
 
-<div class="flex w-full justify-center items-center">
+<div class="flex w-full justify-center items-center p-30">
   <img src={icons[currentIframeIndex]} alt="" width="30%"/>
 </div>
 <div class="flex justify-center items-center">
