@@ -16,7 +16,7 @@
     <img
       src="/weathericons/{convertSymbolKeyToId(weather.data.next_1_hours.summary.symbol_code)}.svg"
       alt=""
-      class="w-70 mr-5"/>
+      class="w-30 mr-5"/>
     <div class=" text-l">
       <div class="flex">
         <img src="/thermometer.svg" class="w-7 mr-3"/>
