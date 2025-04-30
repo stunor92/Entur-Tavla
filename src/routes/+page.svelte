@@ -108,7 +108,7 @@
   <img src={icons[currentIframeIndex]} alt="" class="w-1/4 mr-10 h-30 mt-20"/>
 </div>
 <div class="flex justify-center items-center">
-  <iframe src={iframes[currentIframeIndex]} title="Carousel iframe" width="100%" height="800" frameBorder="0"></iframe>
+  <iframe src={iframes[currentIframeIndex]} title="Carousel iframe" width="100%" height="700" frameBorder="0"></iframe>
 </div>
 
 <div class="flex w-full justify-center items-center mt-20">
