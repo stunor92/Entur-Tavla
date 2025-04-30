@@ -125,6 +125,6 @@
   {/await}
 {/if}
 </div>
-<img src="entur.png" alt="" class="w-100 mt-20"/>
+<img src="entur.png" alt="" class="w-full mt-20"/>
 
 

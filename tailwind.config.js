@@ -1,11 +1,10 @@
-export default {
-  plugins: [],
-    theme: {
-      extend: {},
-    },
-  purge: ["./index.html",'./src/**/*.{svelte,js,ts}'], //for unused css
-  variants: {
+module.exports = {
+  content: [
+    './src/**/*.{html,js,svelte,ts}', // Include Svelte, JS, and TS files
+    './src/css/**/*.css',             // Include CSS files
+  ],
+  theme: {
     extend: {},
   },
-  darkmode: false, // or 'media' or 'class'
-}
+  plugins: [],
+};
