@@ -99,7 +99,7 @@
   });
 </script>
 
-<div class="flex justify-center items-center">
+<div class="flex  w-full justify-center items-center">
   <img src="bergentur.png" alt="" class="w-1/2"/>
 </div>
 
