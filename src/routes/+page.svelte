@@ -99,25 +99,25 @@
   });
 </script>
 
-<div class="flex w-full justify-center items-center">
+<div class="centered-container">
   <img src="bergentur.png" alt="" width="50%"/>
 </div>
 
 
-<div class="flex w-full justify-center items-center p-30">
-  <img src={icons[currentIframeIndex]} alt="" width="30%"/>
+<div class="centered-container">
+  <img src={icons[currentIframeIndex]} alt="" width="30%" class="padded-image"/>
 </div>
-<div class="flex justify-center items-center">
+<div class="centered-container">
   <iframe src={iframes[currentIframeIndex]} title="Carousel iframe" width="100%" height="700" frameBorder="0"></iframe>
 </div>
 
-<div class="flex w-full justify-center items-center mt-20">
+<div class="centered-container">
   {#if LOCATION}
   {#await getYr(String(LOCATION.lat), String(LOCATION.lng))}
   <div class="w-full">laster inner...</div>
   {:then result}
-    <div class="flex gap-4 justify-between items-center">
-        <Weather weather={result.properties.timeseries[0]} />
+    <div class="centered-container">
+      <Weather weather={result.properties.timeseries[0]} />
         <Weather weather={result.properties.timeseries[1]} />
         <Weather weather={result.properties.timeseries[2]} />
         <Weather weather={result.properties.timeseries[3]} />
@@ -125,6 +125,6 @@
   {/await}
 {/if}
 </div>
-<img src="entur.png" alt="" class="w-full mt-20"/>
+<img src="entur.png" alt="" width="100%"/>
 
 

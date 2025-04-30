@@ -8,34 +8,34 @@
 
 
 
-<div class="w-full gap-4 justify-between items-center text-grey mr-10">
-  <div class="w-full text-center text-xl">
+<div>
+  <div class="centered-container header">
     {weather.time.substring(11, 16)}
   </div>
   <div class="flex">
     <img
       src="/weathericons/{convertSymbolKeyToId(weather.data.next_1_hours.summary.symbol_code)}.svg"
       alt=""
-      class="w-30 mr-5"/>
-    <div class=" text-l">
+      class="weather-icon"/>
+    <div class="black">
       <div class="flex">
-        <img src="/thermometer.svg" class="w-7 mr-3"/>
+        <img src="/thermometer.svg" class="icon"/>
         {#if weather.data.instant.details.air_temperature > 0}
-          <div class="text-red-500 text-l">
+          <div class="red">
             {formatNumber(weather.data.instant.details.air_temperature, 'celsius')}
           </div>
         {:else}
-          <div class="text-blue-500 text-l">
+          <div class="blue">
             {formatNumber(weather.data.instant.details.air_temperature, 'celsius')}
           </div>
         {/if}
       </div>
-      <div class="flex text-500 text-l">
-        <img src="/umbrella.svg" class="w-7 mr-3"/>
+      <div class="flex black">
+        <img src="/umbrella.svg" class="icon"/>
         {formatNumber(weather.data.next_1_hours.details.precipitation_amount, 'millimeter')}
       </div>
-      <div class="flex text-500 text-l">
-        <img src="/wind.svg" class="w-7 mr-3"/>
+      <div class="flex black">
+        <img src="/wind.svg" class="icon"/>
         {formatNumber(weather.data.instant.details.wind_speed, 'meter-per-second')}
       </div>
     </div>

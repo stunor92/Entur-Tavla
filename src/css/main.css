@@ -8,13 +8,43 @@ body {
   background-color: white;
 }
 
-.container {
-  @apply mx-auto max-w-5xl px-4;
+.centered-container {
+  display: flex;          /* Enables flexbox */
+  width: 100%;            /* Full width */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;    /* Centers content vertically */
+}
+
+.padded-image {
+  padding: 50px; /* Adjust the padding as needed */
 }
 
 .blue {
-  @apply bg-blue-300 hover:bg-blue-200
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
 }
 .red {
-  @apply bg-red-300 hover:bg-red-200
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
 }
+.black {
+  color: black;
+  font-size: 20px;
+}
+
+.header {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.icon {
+  height: 30px;
+}
+.weather-icon {
+  height: 100px;
+  padding-left: 10px;
+}
+
