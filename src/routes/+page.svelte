@@ -99,13 +99,13 @@
   });
 </script>
 
-<div class="flex justify-center items-center">
-  <img src="bergentur.png" alt="" class="w-200"/>
+<div class="flex w-full justify-center items-center">
+  <img src="bergentur.png" alt="" width="50%"/>
 </div>
 
 
 <div class="flex w-full justify-center items-center">
-  <img src={icons[currentIframeIndex]} alt="" class="w-1/4 mr-10 h-30 mt-20"/>
+  <img src={icons[currentIframeIndex]} alt="" width="30%"/>
 </div>
 <div class="flex justify-center items-center">
   <iframe src={iframes[currentIframeIndex]} title="Carousel iframe" width="100%" height="700" frameBorder="0"></iframe>
