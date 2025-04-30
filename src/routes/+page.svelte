@@ -9,6 +9,21 @@
 
   let LOCATION = { name: 'Bergen', lat: 60.39299, lng: 5.32415 };
   let intervalId: number;
+  let carouselIntervalId: NodeJS.Timeout;
+  let currentIframeIndex = 0;
+
+  const icons = [
+    "tram.gif",
+    "train.gif",
+    "bus.gif"
+  ];
+
+  const iframes = [
+    "https://tavla.entur.no/8uGihZiIhNf1BuCtMTxw",
+    "https://tavla.entur.no/DudXa2hEwhZFN4gTmIrM",
+    "https://tavla.entur.no/V40oHZjOOJSlr1aMzJMw"
+
+  ];
 
   function getLocation() {
   if (navigator.geolocation) {
@@ -72,16 +87,34 @@
       location.reload();
     }, 900000); // 15 minutes in milliseconds
 
+    carouselIntervalId = setInterval(() => {
+      currentIframeIndex = (currentIframeIndex + 1) % iframes.length;
+    }, 20000); // 20 seconds in mill
+
     return () => {
       clearInterval(intervalId);
+      clearInterval(carouselIntervalId);
+
     };
   });
 </script>
 
-<iframe src="https://tavla.entur.no/kaAd4zN9ULyQjD3n8T3a" title="Entur tavla" width="100%" height="1400" frameBorder="0"></iframe>
-{#if LOCATION}
+<div class="flex justify-center items-center">
+  <img src="bergentur.png" alt="" class="w-1/2"/>
+</div>
+
+
+<div class="flex w-full justify-center items-center">
+  <img src={icons[currentIframeIndex]} alt="" class="w-1/4 mr-10 h-30 mt-20"/>
+</div>
+<div class="flex justify-center items-center">
+  <iframe src={iframes[currentIframeIndex]} title="Carousel iframe" width="100%" height="700" frameBorder="0"></iframe>
+</div>
+
+<div class="flex w-full justify-center items-center mt-20">
+  {#if LOCATION}
   {#await getYr(String(LOCATION.lat), String(LOCATION.lng))}
-  <div class="">laster inner...</div>
+  <div class="w-full">laster inner...</div>
   {:then result}
     <div class="flex gap-4 justify-between items-center">
         <Weather weather={result.properties.timeseries[0]} />
@@ -91,4 +124,7 @@
     </div>
   {/await}
 {/if}
+</div>
+<img src="entur.png" alt="" class="w-100 mt-20"/>
+
 
