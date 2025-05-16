@@ -114,13 +114,16 @@
 <div class="centered-container">
   {#if LOCATION}
   {#await getYr(String(LOCATION.lat), String(LOCATION.lng))}
-  <div class="w-full">laster inner...</div>
+  <div class="w-full">laster inn...</div>
   {:then result}
     <div class="centered-container">
-      <Weather weather={result.properties.timeseries[0]} />
-        <Weather weather={result.properties.timeseries[1]} />
-        <Weather weather={result.properties.timeseries[2]} />
-        <Weather weather={result.properties.timeseries[3]} />
+      <Weather weather={result.properties.timeseries[3]} />
+        <Weather weather={result.properties.timeseries[4]} />
+        <Weather weather={result.properties.timeseries[5]} />
+        <Weather weather={result.properties.timeseries[6]} />
+        <Weather weather={result.properties.timeseries[7]} />
+        <Weather weather={result.properties.timeseries[8]} />
+
     </div>
   {/await}
 {/if}
