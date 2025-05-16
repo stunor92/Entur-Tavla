@@ -8,11 +8,11 @@
 
 
 
-<div>
-  <div class="centered-container header">
+<div class="box">
+  <div class="header">
     {weather.time.substring(11, 16)}
   </div>
-  <div class="box">
+  <div>
     <img
       src="/weathericons/{convertSymbolKeyToId(weather.data.next_1_hours.summary.symbol_code)}.svg"
       alt=""
