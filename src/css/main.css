@@ -16,7 +16,7 @@ body {
 }
 
 .padded-image {
-  padding: 50px; /* Adjust the padding as needed */
+  padding: 20px; /* Adjust the padding as needed */
 }
 
 .blue {
@@ -36,15 +36,15 @@ body {
 
 .header {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .icon {
-  height: 30px;
+  height: 25px;
 }
 .weather-icon {
-  height: 100px;
+  height: 70px;
   padding-left: 10px;
 }
 

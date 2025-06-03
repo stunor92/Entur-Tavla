@@ -18,12 +18,6 @@
     "bus.gif"
   ];
 
-  const iframes = [
-    "https://tavla.entur.no/8uGihZiIhNf1BuCtMTxw",
-    "https://tavla.entur.no/DudXa2hEwhZFN4gTmIrM",
-    "https://tavla.entur.no/V40oHZjOOJSlr1aMzJMw"
-
-  ];
 
   function getLocation() {
   if (navigator.geolocation) {
@@ -103,12 +97,11 @@
   <img src="bergentur.png" alt="" width="50%"/>
 </div>
 
-
 <div class="centered-container">
   <img src={icons[currentIframeIndex]} alt="" width="30%" class="padded-image"/>
 </div>
 <div class="centered-container">
-  <iframe src=https://tavla.entur.no/2LisSL7xqQfoTnQOmd3y title="Carousel iframe" width="100%" height="650" frameBorder="0"></iframe>
+  <iframe src=https://tavla.entur.no/2LisSL7xqQfoTnQOmd3y title="Carousel iframe" width="100%" height="700" frameBorder="0"></iframe>
 </div>
 
 <div class="centered-container">
