@@ -101,7 +101,7 @@
   <img src={icons[currentIframeIndex]} alt="" width="30%" class="padded-image"/>
 </div>
 <div class="centered-container">
-  <iframe src=https://tavla.entur.no/2LisSL7xqQfoTnQOmd3y title="Carousel iframe" width="100%" height="700" frameBorder="0"></iframe>
+  <iframe src=https://tavla.entur.no/2LisSL7xqQfoTnQOmd3y title="Carousel iframe" width="100%" height="750" frameBorder="0"></iframe>
 </div>
 
 <div class="centered-container">
