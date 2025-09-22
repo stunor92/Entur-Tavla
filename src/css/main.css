@@ -55,3 +55,8 @@ body {
   padding: 10px;
 }
 
+.video-blur {
+  width:  90%; /* Smaller frame - adjust as needed */
+  height: auto;
+  border-radius: 20px; /* Rounded corners */
+}

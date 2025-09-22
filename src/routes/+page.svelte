@@ -100,8 +100,9 @@
 <div class="centered-container">
   <img src={icons[currentIframeIndex]} alt="" width="30%" class="padded-image"/>
 </div>
-<div class="centered-container">
-  <iframe src=https://tavla.entur.no/2LisSL7xqQfoTnQOmd3y title="Carousel iframe" width="100%" height="750" frameBorder="0"></iframe>
+
+<div class="centered-container" style="height: 100vh;">
+  <video src="entur.mp4" autoplay loop muted controls class="video-blur"></video>
 </div>
 
 <div class="centered-container">
