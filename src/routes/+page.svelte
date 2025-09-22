@@ -99,11 +99,7 @@
   <img src="bergentur.png" alt="" width="50%"/>
 </div>
 
-<div class="centered-container">
-  <img src={icons[currentIframeIndex]} alt="" width="30%" class="padded-image"/>
-</div>
-
-<div class="centered-container" style="height: 100vh;">
+<div class="centered-container" style="height: 100%;">
   <video src="entur.mp4" autoplay loop muted controls class="video-blur"></video>
 </div>
 
