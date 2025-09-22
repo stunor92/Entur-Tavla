@@ -9,7 +9,7 @@
 
   let LOCATION = { name: 'Bergen', lat: 60.39299, lng: 5.32415 };
   let intervalId: number;
-  let carouselIntervalId: NodeJS.Timeout;
+  let carouselIntervalId: number;
   let currentIframeIndex = 0;
 
   const icons = [
@@ -17,6 +17,8 @@
     "train.gif",
     "bus.gif"
   ];
+
+  const iframes = icons; // Assuming 'iframes' refers to the 'icons' array
 
 
   function getLocation() {
