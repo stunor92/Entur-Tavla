@@ -95,7 +95,7 @@
   });
 </script>
 
-<div class="centered-container">
+<div class="centered-container" style="padding-top: 5vh;">
   <img src="bergentur.png" alt="" width="50%"/>
 </div>
 
