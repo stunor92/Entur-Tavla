@@ -99,7 +99,7 @@
   <img src="bergentur.png" alt="" width="50%"/>
 </div>
 
-<div class="centered-container" style="height: 60vh;">
+<div class="centered-container" style="height: 50vh;">
   <video src="entur.mp4" autoplay loop muted controls class="video-blur"></video>
 </div>
 

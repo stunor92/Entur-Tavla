@@ -58,5 +58,5 @@ body {
 .video-blur {
   width:  90%; /* Smaller frame - adjust as needed */
   height: auto;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 30px; /* Rounded corners */
 }
